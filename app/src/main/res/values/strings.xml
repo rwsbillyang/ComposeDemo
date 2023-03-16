@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ComposeDemo</string>
+
+    <string name="settings">设置</string>
+
+    <string name="cord_format">%s°, %s°</string>
+    <string name="degree_format">%d°</string>
+
+    <string name="latitude">经度</string>
+    <string name="longitude">纬度</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+
+    <string name="allow_location_permission">授予定位权限</string>
+    <string name="turn_on_gps">打开GPS</string>
+    <string name="explain_permission_request">需要GPS权限，获取准确经纬度</string>
+
+
+    <string name="destination_direction">Destination direction</string>
+    <string name="phone_direction">Phone direction</string>
+</resources>
