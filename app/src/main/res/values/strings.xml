@@ -18,4 +18,15 @@
 
     <string name="destination_direction">Destination direction</string>
     <string name="phone_direction">Phone direction</string>
+
+
+
+    <string name="app_name_rally">Rally</string>
+    <string name="total">Total</string>
+    <string name="due">Due</string>
+    <string name="account_redacted">• • • • • </string>
+    <string name="accounts">Accounts</string>
+    <string name="bills">Bills</string>
+    <string name="sort">Sort</string>
+    <string name="see_all">SEE ALL</string>
 </resources>

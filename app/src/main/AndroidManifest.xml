@@ -27,6 +27,18 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+        <activity
+            android:name="com.github.rwsbillyang.composedemo.rally.RallyActivity"
+            android:exported="true"
+            android:label="@string/app_name_rally"
+            >
+
+        </activity>
+        <activity
+            android:name="com.github.rwsbillyang.composedemo.demo.DemoActivity"
+            android:exported="true">
+
+        </activity>
     </application>
 
 </manifest>

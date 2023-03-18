@@ -4,8 +4,11 @@ package com.github.rwsbillyang.composedemo.demo
 
 import android.graphics.Paint
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
+
+import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
@@ -24,6 +27,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.github.rwsbillyang.composedemo.ui.theme.ComposeDemoTheme
+import kotlinx.coroutines.launch
 
 import kotlin.math.abs
 
@@ -244,4 +248,26 @@ fun demo50() {
                 }
             }
     )
+}
+
+
+@Composable
+fun MoviesScreen() {
+    // Creates a CoroutineScope bound to the MoviesScreen's lifecycle
+    val scope = rememberCoroutineScope()
+    Column {
+
+        Button(
+            onClick = {
+
+                // Create a new coroutine in the event handler to show a snackbar
+                scope.launch {
+
+                    //scaffoldState.snackbarHostState.showSnackbar("Something happened!")
+                }
+            }
+        ) {
+            Text("Press me")
+        }
+    }
 }
