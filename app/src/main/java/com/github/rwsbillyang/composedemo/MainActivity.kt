@@ -4,16 +4,16 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import com.github.rwsbillyang.composedemo.demo.DemoActivity
 import com.github.rwsbillyang.composedemo.rally.RallyActivity
+import com.github.rwsbillyang.composedemo.rally.RallyActivity2
 import com.github.rwsbillyang.composedemo.ui.theme.ComposeDemoTheme
 
 class MainActivity : ComponentActivity() {
@@ -36,6 +36,10 @@ class MainActivity : ComponentActivity() {
                         Row{
                             Button(onClick = { startActivity(Intent(context, RallyActivity::class.java)) }) {
                                 Text("RallyApp")
+                            }
+                            Spacer(Modifier.width(10.dp))
+                            Button(onClick = { startActivity(Intent(context, RallyActivity2::class.java)) }) {
+                                Text("RallyApp2")
                             }
                         }
                     }
