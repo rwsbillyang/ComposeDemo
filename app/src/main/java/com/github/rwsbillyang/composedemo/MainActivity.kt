@@ -11,6 +11,8 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.github.rwsbillyang.composedemo.basiclayout.BasicLayoutActivity
+import com.github.rwsbillyang.composedemo.basiclayout.ScaffoldExampleActivity
 import com.github.rwsbillyang.composedemo.demo.DemoActivity
 import com.github.rwsbillyang.composedemo.rally.RallyActivity
 import com.github.rwsbillyang.composedemo.rally.RallyActivity2
@@ -32,6 +34,7 @@ class MainActivity : ComponentActivity() {
                           Button(onClick = { startActivity(Intent(context, DemoActivity::class.java)) }) {
                               Text("Demo")
                           }
+
                         }
                         Row{
                             Button(onClick = { startActivity(Intent(context, RallyActivity::class.java)) }) {
@@ -40,6 +43,16 @@ class MainActivity : ComponentActivity() {
                             Spacer(Modifier.width(10.dp))
                             Button(onClick = { startActivity(Intent(context, RallyActivity2::class.java)) }) {
                                 Text("RallyApp2")
+                            }
+                        }
+
+                        Row{
+                            Button(onClick = { startActivity(Intent(context, BasicLayoutActivity::class.java)) }) {
+                                Text("BasicLayout")
+                            }
+                            Spacer(Modifier.width(10.dp))
+                            Button(onClick = { startActivity(Intent(context, ScaffoldExampleActivity::class.java)) }) {
+                                Text("ScaffoldExample")
                             }
                         }
                     }

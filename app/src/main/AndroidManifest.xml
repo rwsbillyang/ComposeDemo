@@ -50,6 +50,20 @@
             android:name="com.github.rwsbillyang.composedemo.demo.DemoActivity"
             android:exported="true">
         </activity>
+
+        <activity
+            android:name="com.github.rwsbillyang.composedemo.basiclayout.BasicLayoutActivity"
+            android:exported="true"
+            android:label="@string/app_name_mysmoothe"
+            >
+        </activity>
+        <activity
+            android:name="com.github.rwsbillyang.composedemo.basiclayout.ScaffoldExampleActivity"
+            android:exported="true"
+            android:label="@string/app_name_mysmoothe"
+            >
+        </activity>
+
     </application>
 
 </manifest>
